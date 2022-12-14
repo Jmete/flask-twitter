@@ -25,6 +25,9 @@
                 <li>{{ tweet.text }}</li>
             {% endfor %}
         </ul>
+    <!-- Manually added this else statement just to make the user experience better for when no tweets are returned -->
+    {% else %}
+        <h2>No tweets found. Please try entering another user.</h2>
     {% endif %}
 </body>
 </html>
