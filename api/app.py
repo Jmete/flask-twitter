@@ -25,7 +25,11 @@ def index():
     screen_name = request.args.get('screen_name')
 
     # Get the user's tweets
-    tweets = api.user_timeline(screen_name=screen_name, count=10)
+    # Modified to handle non-existent screen names.
+    try:
+        tweets = api.user_timeline(screen_name=screen_name, count=10)
+    except:
+        tweets = []
 
     return render_template('index.html', tweets=tweets)
 

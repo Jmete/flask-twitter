@@ -6,7 +6,8 @@ Try it out: [Click Here](https://tweetviewer.jamesmete.com/)
 ### Summary
 
 This entire app was written using [chatGPT by OpenAI](https://openai.com/blog/chatgpt/) with minimal interference.
-The LLM generated the code for the python, css, and html files that enabled a functional flask app within minutes. 
+The LLM generated the code for the python, css, and html files that enabled a functional flask app within minutes.
+It is definately not perfect. For example, it will crash if a twitter screen name is given that doesn't exist. I have modified elements manually to fix these, but chatGPT could also debug it, but due to network errors it made it difficult to ask follow-up questions.
 
 *Note: I had to modify the folder structure to include the api folder and the vercel.json file because I am deploying my demo on Vercel.*
 
