@@ -1,8 +1,14 @@
 # Flask Twitter
-## A minimal flask Twitter tweet display app built using chatGPT.
+A minimal flask Twitter tweet display app built using chatGPT.
+
+Try it out: [Click Here](https://tweetviewer.jamesmete.com/)
+
+### Summary
 
 This entire app was written using [chatGPT by OpenAI](https://openai.com/blog/chatgpt/) with minimal interference.
 The LLM generated the code for the python, css, and html files that enabled a functional flask app within minutes. 
+
+*Note: I had to modify the folder structure to include the api folder and the vercel.json file because I am deploying my demo on Vercel.*
 
 Here's how that journey happened:
 
