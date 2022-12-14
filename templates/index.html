@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Tweet Display</title>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+
+</head>
+<body>
+    <h1>Twitter Tweet Display</h1>
+
+    <!-- I added the below h2 tag manually for clarification to users. -->
+    <h2>This app's code was largely created using chatGPT by OpenAI. Find out more <a href="">here</a></h2>
+    
+    <form action="/" method="get">
+        <label for="screen_name">Enter a Twitter screen name:</label>
+        <input type="text" name="screen_name" id="screen_name">
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if tweets %}
+        <h2>Tweets for {{ tweets[0].user.name }}</h2>
+        <ul>
+            {% for tweet in tweets %}
+                <li>{{ tweet.text }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

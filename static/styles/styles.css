@@ -1,0 +1,57 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1DA1F2;
+    color: #ffffff;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+label, input[type="text"], input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* This needed to be manually added so the text could be visible. */
+    color:black;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #1DA1F2;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1DA1F2;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* This needed to be manually added so the text could be visible. */
+    color:black;
+}
